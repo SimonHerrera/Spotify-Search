@@ -17,10 +17,9 @@ export class SearchComponent  {
 
   searchMusic() {
     this._spotifyService.searchMusic(this.searchStr).subscribe(res => {
-      this.searchRes = res.artists.items
+      this.searchRes = res.artists.items;
     });
 
-    )
 
   }
 }
